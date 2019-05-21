@@ -16,4 +16,5 @@ or you can just send a name of color. For example: Green, Orange or even Aquamar
 Register, spaces and separators don't matter.
 
 Telegram username: @color_palette_bot
-<img src="usecase_demo.png" width="536" height="390">
+
+<img src="usecase_demo.png">
