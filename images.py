@@ -14,8 +14,8 @@ def create_solid_image_stream(color_int):
     image = create_png(
         (200, 200),
         (color.red_component(color_int),
-         color.blue_component(color_int),
-         color.green_component(color_int))
+         color.green_component(color_int),
+         color.blue_component(color_int))
     )
 
     image.save(bio, 'PNG')
