@@ -1,0 +1,4 @@
+TOKEN = 'PUT YOUR TELEGRAM BOT TOKEN HERE'
+REQUEST_KWARGS = {
+    # some request args
+}
