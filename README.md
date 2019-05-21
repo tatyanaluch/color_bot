@@ -17,4 +17,4 @@ Register, spaces and separators don't matter.
 
 Telegram username: @color_palette_bot
 
-<img src="usecase_demo.png">
+<img src="usecase_demo.png" width="50%">
