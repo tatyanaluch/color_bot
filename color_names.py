@@ -4,7 +4,8 @@ import textdistance
 from color import print_hex_color
 
 columns = ['color_name', 'color_hex']
-names = pd.read_csv('color_names.txt', sep='\t', header=None, names=columns)
+# TODO add multi-name support
+names = pd.read_csv('color_names.txt', sep='\t', header=None, names=columns).drop_duplicates(subset='color_hex')
 similarity_threshold = 0.75
 
 
@@ -27,12 +28,11 @@ def find_color_by_name(name):
     for index, row in names.iterrows():
         version = row['color_name']
         similarity = textdistance.hamming.normalized_similarity(version.lower(), name_to_search)
-        # print(version, similarity)
+
         if similarity > best_similarity:
             best_similarity = similarity
             best_version = row['color_hex']
 
-    print('BEST: ', best_version, best_similarity)
     if best_similarity >= similarity_threshold:
         return best_version, best_similarity
 
