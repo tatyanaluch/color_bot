@@ -15,6 +15,6 @@ Supported formats:
 or you can just send a name of color. For example: Green, Orange or even Aquamarine. 
 Register, spaces and separators don't matter.
 
-![](usecase_demo.png)
+![](usecase_demo.png =428x690)
 
 Telegram username: @color_palette_bot
