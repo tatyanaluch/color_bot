@@ -17,10 +17,11 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 
 def start(bot, update):
+    user_name = update.message.chat.first_name
     update.message.reply_text('''
-    Hi! I'm Сolor Bot.
-    You can send me HEX, RGB, RGB float and color name.
-    And I try to transform it.''')
+Hello, {}!
+
+I'm Сolor Bot. You can send to me HEX, RGB, RGB float or color name. And I'll try to transform it :)'''.format(user_name))
 
 
 def handle_text_message(bot, update):
